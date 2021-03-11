@@ -12,7 +12,8 @@
 ### 設定
 
 - gitで、このリポジトリをローカルコンピュータにクローンする
-    - `git clone <このリポジトリのgit url>`
+    - `git clone https://github.com/kobay/script-for-troubleshoot.git`
+    - または、ダウンロードする
 - JWT認証用のconfig.jsonを、プロジェクトフォルダ直下に配置する
 - `Config.cs` ファイルを開き、以下の個所を変更する
     - `PathToConfigFile` JWT認証用のconfig.jsonファイルへのパス
