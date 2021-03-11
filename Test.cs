@@ -17,10 +17,10 @@ namespace script
     public static class Test
     {
         // TEST用に作成するAppUserの数
-        private const int NumberOfAppUsersForTest = 10;
+        private const int NumberOfAppUsersForTest = 5;
 
         // TEST用に作成するフォルダの数
-        private const int NumberOfFoldersForTest = 32;
+        private const int NumberOfFoldersForTest = 10;
 
         // TEST用に作成したAppUserのIDを保存しておくファイル
         private const string PathToAppUserIDsForTest = @"testappusers.json";
@@ -55,9 +55,9 @@ namespace script
             Console.WriteLine("finished app user creation");
 
             // 検索用AppUserを作成
-            // var searchUser = await CreateSearchUser(saClient, throttle);
-            // var searchUserId = searchUser.Id;
-            var searchUserId = "15473262228";
+            var searchUser = await CreateSearchUser(saClient, throttle);
+            var searchUserId = searchUser.Id;
+            // var searchUserId = "15473262228";
             Console.WriteLine("created searchUser ID:{0}", searchUserId);
 
             for (int i = 0; i < NumberOfAppUsersForTest; i++)
