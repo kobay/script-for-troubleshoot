@@ -60,8 +60,9 @@
 
 - `Test.NumberOfAppUsersForTest`の数だけAppUserを作成します。
 - `Test.NumberOfFoldersForTest`の数だけ各AppUser配下にフォルダを作成します。
+- Sample.docを作成したフォルダにアップロードします（2つ目からはアップロードではなく1つ目のファイルをコピー）
 - `Test.PathToAppUserIDsForTest`のファイルに、作成したAppUserのIDのリストを書き出します。
-  （これをConfig.AppUsersにはりつけるとテストを行えます）
+  （この内容を、Config.AppUsersにはりつけるとテストを行えます。なおリストの最後のIDが検索用AppUserのIDです。）
 
 ##### `dotnet run test:delete`
 
