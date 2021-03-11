@@ -57,7 +57,6 @@ namespace script
             // 検索用AppUserを作成
             var searchUser = await CreateSearchUser(saClient, throttle);
             var searchUserId = searchUser.Id;
-            // var searchUserId = "15473262228";
             Console.WriteLine("created searchUser ID:{0}", searchUserId);
 
             for (int i = 0; i < NumberOfAppUsersForTest; i++)
@@ -113,9 +112,6 @@ namespace script
                         Console.WriteLine(
                             $"appUser {currAppUser}/{NumberOfAppUsersForTest}, Folder {currFolder}/{NumberOfFoldersForTest}");
                     }));
-
-                    // 少しずつ待機
-                    // if ()
                 }
 
                 // フォルダ作成を待機
