@@ -101,6 +101,7 @@ namespace script
                             await MoveFolder(item, topFolder, auClient, throttle);
 
 
+                            // コンソールの表示が非同期でされないように順番待ちをする
                             lock (forLock)
                             {
                                 folderCount += 1;
