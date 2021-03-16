@@ -1,5 +1,12 @@
 # 修正 script
 
+
+##
+
+*このスクリプトを実行したことにより問題が発生した場合、作成者は一切責任を取れません*
+*このスクリプトはあくまでサンプルです。必要に合わせてコードを修正の上、責任を持って実行してください。*
+
+
 ## 事前準備
 
 ### ソフトウェア
@@ -12,7 +19,8 @@
 ### 設定
 
 - gitで、このリポジトリをローカルコンピュータにクローンする
-    - `git clone <このリポジトリのgit url>`
+    - `git clone https://github.com/kobay/script-for-troubleshoot.git`
+    - または、ダウンロードする
 - JWT認証用のconfig.jsonを、プロジェクトフォルダ直下に配置する
 - `Config.cs` ファイルを開き、以下の個所を変更する
     - `PathToConfigFile` JWT認証用のconfig.jsonファイルへのパス
